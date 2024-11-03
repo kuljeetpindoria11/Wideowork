@@ -1,83 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./contact-us.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Bricolage Grotesque:wght@300;400;500;600;700;800&display=swap"
-    />
-  </head>
-  <body>
-    <div class="contact-us1">
-      <header class="nav2">
-        <div class="logo2" id="logoContainer">
-          <img
-            class="text-icon2"
-            loading="lazy"
-            alt=""
-            src="./public/text-1.svg"
-          />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-          <img
-            class="union-icon2"
-            loading="lazy"
-            alt=""
-            src="./public/union-1.svg"
-          />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./contact-us.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage Grotesque:wght@300;400;500;600;700;800&display=swap" />
+</head>
+
+<body>
+  <div class="contact-us1">
+    <header class="nav2">
+      <div class="logo2" id="logoContainer">
+        <img class="text-icon2" loading="lazy" alt="" src="./public/text-1.svg" />
+
+        <img class="union-icon2" loading="lazy" alt="" src="./public/union-1.svg" />
+      </div>
+      <nav class="header-menu">
+        <a class="home1" id="homeText">Home</a>
+        <a class="platform1" id="platformText">Platform</a>
+        <a class="platform1" id="resourceText">Resource</a>
+        <a class="platform1" id="enterpriceText">Enterprice</a>
+        <a class="platform1" id="aboutText">About</a>
+        <a class="platform1" id="contactUsText">Contact us</a>
+      </nav>
+      <button class="btns5" onclick="window.open('https://forms.gle/45n7EHBAwC8YHwof7')">
+        <a class="order-now5">Order Now</a>
+        <div class="header-button-icon">
+          <img class="icon-jam-icons-outline-l5" alt=""
+            src="./public/icon--jamicons--outline--logos--chevronright-1.svg" />
         </div>
-        <nav class="header-menu">
-          <a class="home1" id="homeText">Home</a>
-          <a class="platform1" id="platformText">Platform</a>
-          <a class="platform1" id="resourceText">Resource</a>
-          <a class="platform1" id="enterpriceText">Enterprice</a>
-          <a class="platform1" id="aboutText">About</a>
-          <a class="platform1" id="contactUsText">Contact us</a>
-        </nav>
-        <button class="btns5">
-          <a class="order-now5">Order Now</a>
-          <div class="header-button-icon">
-            <img
-              class="icon-jam-icons-outline-l5"
-              alt=""
-              src="./public/icon--jamicons--outline--logos--chevronright-1.svg"
-            />
-          </div>
-        </button>
-      </header>
-      <section class="contact-us-inner">
-        <div class="help-content-parent">
-          <div class="help-content">
-            <div class="help-paragraph-parent">
-              <div class="help-paragraph">
-                <h1 class="how-can-we">How Can We Help You?</h1>
-                <h3 class="fill-out-the">
-                  Fill out the form and our team will get in touch shortly
-                </h3>
-              </div>
-              <div class="prefer-to-email-us-parent">
-                <h3 class="prefer-to-email">Prefer to Email Us?</h3>
-                <h3 class="reach-us-at-container">
-                  <span class="reach-us-at">Reach us at </span>
-                  <b class="workwideoworkcom">work@wideowork.com</b>
-                  <span class="reach-us-at"> for direct inquiries.</span>
-                </h3>
-              </div>
+      </button>
+    </header>
+    <section class="contact-us-inner">
+      <div class="help-content-parent">
+        <div class="help-content">
+          <div class="help-paragraph-parent">
+            <div style="display: none" class="help-paragraph">
+              <h1 class="how-can-we">How Can We Help You?</h1>
+              <h3 class="fill-out-the">
+                Fill out the form and our team will get in touch shortly
+              </h3>
+            </div>
+            <div class="prefer-to-email-us-parent">
+              <h3 class="prefer-to-email">Prefer to Email Us?</h3>
+              <h3 class="reach-us-at-container">
+                <span class="reach-us-at">Reach us at </span>
+                <a class="workwideoworkcom" href="mailto:work@wideowork.com">work@wideowork.com</a>
+                <span class="reach-us-at"> for direct inquiries.</span>
+              </h3>
             </div>
           </div>
-          <div class="box">
-            <div class="input-labels">
-              <input class="name" placeholder="Name" type="text" />
+        </div>
 
-              <div class="input-fields"></div>
+        <div class="box">
+          <form
+            action="https://script.google.com/macros/s/AKfycbzyC9FsG8tlU2M_-uirvCKuT0pfzGurUF00e0oPtFJvDMv9PKrUgWe6Xvu5XowJpCNuIg/exec"
+            method="POST" id="contact_us">
+            <div class="input-labels">
+              <p>Name</p>
+              <input class="name" placeholder="Name" type="text" name="Name" />
             </div>
             <div class="input-labels">
-              <input class="name" placeholder="Email id" type="text" />
-
-              <div class="input-fields"></div>
+              <p>Email</p>
+              <input class="name" placeholder="Email id" type="text" name="Email" />
             </div>
             <div class="inquiry-type-wrapper">
               <div class="inquiry-type">
@@ -85,40 +74,24 @@
                 <div class="inquiry-options">
                   <div class="frame-parent8">
                     <div class="frame-parent9">
-                      <input
-                        class="frame-input"
-                        type="radio"
-                        name="radioGroup-1"
-                      />
+                      <input class="frame-input" type="radio" name="Inquiry" value="Video Ads" />
 
                       <a class="video-ads">Video Ads</a>
                     </div>
                     <div class="frame-parent10">
-                      <input
-                        class="frame-child3"
-                        type="radio"
-                        name="radioGroup-1"
-                      />
+                      <input class="frame-child3" type="radio" name="Inquiry" value="Video Marketing" />
 
                       <div class="video-marketing">Video Marketing</div>
                     </div>
                   </div>
                   <div class="frame-parent11">
                     <div class="frame-parent10">
-                      <input
-                        class="frame-child3"
-                        type="radio"
-                        name="radioGroup-2"
-                      />
+                      <input class="frame-child3" type="radio" name="Inquiry" value="Video Consultancy"/>
 
                       <div class="video-consultancy">Video Consultancy</div>
                     </div>
                     <div class="frame-parent13">
-                      <input
-                        class="frame-child5"
-                        type="radio"
-                        name="radioGroup-2"
-                      />
+                      <input class="frame-child5" type="radio" name="Inquiry" value="other" />
 
                       <div class="other">Other</div>
                     </div>
@@ -128,141 +101,135 @@
             </div>
             <div class="input-labels2">
               <div class="message">Message</div>
-              <div class="input-labels-item"></div>
+              <textarea class="input-labels-item" name="Message" type="textarea"></textarea>
             </div>
-            <button class="btns6">
+            <button class="btns6" type="submit">
               <div class="order-now6">Let's Get Started</div>
               <div class="header-button-icon">
-                <img
-                  class="icon-jam-icons-outline-l6"
-                  alt=""
-                  src="./public/icon--jamicons--outline--logos--chevronright.svg"
-                />
+                <img class="icon-jam-icons-outline-l6" alt=""
+                  src="./public/icon--jamicons--outline--logos--chevronright.svg" />
               </div>
             </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="nav3">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="logo3">
+            <img class="text-icon3" alt="" src="./public/text.svg" />
+
+            <img class="union-icon3" alt="" src="./public/union.svg" />
+          </div>
+          <div class="social-icons1">
+            <a href="https://www.instagram.com/wideo.work/profilecard/?igsh=MWJtMXlzbWthbjFvZA==
+            "><img class="iconfacebook2" loading="lazy" alt="" src="./public/iconfacebook.svg" /> </a>
+            <a href=""><img class="iconfacebook2" alt="" src="./public/iconfacebook-1.svg" /></a>
+            <a href="https://www.linkedin.com/company/wideowork/">
+              <img class="iconfacebook2" loading="lazy" alt="" src="./public/iconlinkedin.svg" />
+            </a>
+            <a href="https://wa.me/919328054044">
+              <img class="iconfacebook2" loading="lazy" alt="" src="./public/iconwhatsapp.svg" />
+            </a>
+            <a href="">
+              <img class="iconfacebook2" loading="lazy" alt="" src="./public/iconyoutube.svg" />
+            </a>
           </div>
         </div>
-      </section>
-      <footer class="nav3">
-        <div class="footer-content">
-          <div class="footer-info">
-            <div class="logo3">
-              <img class="text-icon3" alt="" src="./public/text.svg" />
-
-              <img class="union-icon3" alt="" src="./public/union.svg" />
-            </div>
-            <div class="social-icons1">
-              <img
-                class="iconfacebook2"
-                loading="lazy"
-                alt=""
-                src="./public/iconfacebook.svg"
-              />
-
-              <img
-                class="iconfacebook2"
-                alt=""
-                src="./public/iconfacebook-1.svg"
-              />
-
-              <img
-                class="iconfacebook2"
-                loading="lazy"
-                alt=""
-                src="./public/iconlinkedin.svg"
-              />
-
-              <img
-                class="iconfacebook2"
-                loading="lazy"
-                alt=""
-                src="./public/iconwhatsapp.svg"
-              />
-
-              <img
-                class="iconfacebook2"
-                loading="lazy"
-                alt=""
-                src="./public/iconyoutube.svg"
-              />
-            </div>
+        <div class="footer-call-to-action">
+          <div class="want-to-make-container1">
+            <p class="want-to-make1">
+              Want to make your video video production faster, affordable, and
+              scalable?
+            </p>
+            <p class="want-to-make1">&nbsp;</p>
+            <p class="want-to-make1">
+              Contact us for more information on how can transform your
+              business.
+            </p>
           </div>
-          <div class="footer-call-to-action">
-            <div class="want-to-make-container1">
-              <p class="want-to-make1">
-                Want to make your video video production faster, affordable, and
-                scalable?
-              </p>
-              <p class="want-to-make1">&nbsp;</p>
-              <p class="want-to-make1">
-                Contact us for more information on how can transform your
-                business.
-              </p>
+          <button class="btns5" onclick="window.open('https://forms.gle/45n7EHBAwC8YHwof7')">
+            <div class="order-now7">Order Now</div>
+            <div class="header-button-icon">
+              <img class="icon-jam-icons-outline-l6" alt=""
+                src="./public/icon--jamicons--outline--logos--chevronright-1.svg" />
             </div>
-            <button class="btns5">
-              <div class="order-now7">Order Now</div>
-              <div class="header-button-icon">
-                <img
-                  class="icon-jam-icons-outline-l6"
-                  alt=""
-                  src="./public/icon--jamicons--outline--logos--chevronright-1.svg"
-                />
-              </div>
-            </button>
-          </div>
+          </button>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+  </div>
 
-    <script>
-      var logoContainer = document.getElementById("logoContainer");
-      if (logoContainer) {
-        logoContainer.addEventListener("click", function (e) {
-          window.location.href = "./index.html";
-        });
-      }
+  <script>
+    var logoContainer = document.getElementById("logoContainer");
+    if (logoContainer) {
+      logoContainer.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
+      });
+    }
 
-      var homeText = document.getElementById("homeText");
-      if (homeText) {
-        homeText.addEventListener("click", function (e) {
-          window.location.href = "./index.html";
-        });
-      }
+    var homeText = document.getElementById("homeText");
+    if (homeText) {
+      homeText.addEventListener("click", function (e) {
+        window.location.href = "./index.html";
+      });
+    }
 
-      var platformText = document.getElementById("platformText");
-      if (platformText) {
-        platformText.addEventListener("click", function (e) {
-          window.location.href = "product-page.html";
-        });
-      }
+    var platformText = document.getElementById("platformText");
+    if (platformText) {
+      platformText.addEventListener("click", function (e) {
+        window.location.href = "product-page.html";
+      });
+    }
 
-      var resourceText = document.getElementById("resourceText");
-      if (resourceText) {
-        resourceText.addEventListener("click", function (e) {
-          window.location.href = "./resource.html";
-        });
-      }
+    var resourceText = document.getElementById("resourceText");
+    if (resourceText) {
+      resourceText.addEventListener("click", function (e) {
+        window.location.href = "./resource.html";
+      });
+    }
 
-      var enterpriceText = document.getElementById("enterpriceText");
-      if (enterpriceText) {
-        enterpriceText.addEventListener("click", function (e) {
-          window.location.href = "./enterprise.html";
-        });
-      }
+    var enterpriceText = document.getElementById("enterpriceText");
+    if (enterpriceText) {
+      enterpriceText.addEventListener("click", function (e) {
+        window.location.href = "./enterprise.html";
+      });
+    }
 
-      var aboutText = document.getElementById("aboutText");
-      if (aboutText) {
-        aboutText.addEventListener("click", function (e) {
-          window.location.href = "./about-us.html";
-        });
-      }
+    var aboutText = document.getElementById("aboutText");
+    if (aboutText) {
+      aboutText.addEventListener("click", function (e) {
+        window.location.href = "./about-us.html";
+      });
+    }
 
-      var contactUsText = document.getElementById("contactUsText");
-      if (contactUsText) {
-        contactUsText.addEventListener("click", function (e) {
-          window.location.href = "./contact-us.html";
-        });
-      }
-    </script>
-  </body>
+    var contactUsText = document.getElementById("contactUsText");
+    if (contactUsText) {
+      contactUsText.addEventListener("click", function (e) {
+        window.location.href = "./contact-us.html";
+      });
+    }
+  </script>
+
+  <script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", function () {
+      const yourForm = document.getElementById('contact_us');
+      yourForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(yourForm);
+        const action = e.target.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        }).then(() => {
+          window.alert('Success');
+          yourForm.reset();
+          return false
+        })
+      })
+    }); 
+  </script>
+</body>
+
 </html>
