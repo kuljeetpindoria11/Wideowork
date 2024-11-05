@@ -1042,6 +1042,89 @@
     box-sizing: border-box;
   }
 }
+
+.img-swap {
+  display: table;
+  
+  p {
+    margin: 0;
+       
+    &:first-child {
+      bottom: 0;
+      left: 0;
+      max-width: 100%;
+      overflow: hidden;
+      position: absolute;
+      resize: horizontal;
+      right: calc(100% - var(--start));
+      top: 0;
+      
+      &::before,
+      &::after {
+        background: #eee;
+        bottom: 0.8em;
+        content: "Drag by this corner";
+        font-size: 0.8em;
+        opacity: 0;
+        padding: 0.2em 0.5em;
+        position: absolute;
+        right: 1.5em;
+        transition: all 0.5s;
+        z-index: 1;
+      }
+      
+      &::before {
+        color: transparent;
+        transform: skew(30deg, 0) translate(0.4em, 0);
+      }
+    }
+    
+    &:not(:first-child) {
+      img {
+        max-width: 100%;
+      }
+    }
+    
+    &:focus {
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+    }
+    img {
+      max-height: 100%;
+      vertical-align: top;
+    }    
+  }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  figcaption {
+    background: rgba(0 0 0 / 70%);
+    color: #fff;
+    left: 0;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s;
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  
+  &:focus-within {
+    figcaption {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+
+
 @media screen and (max-width: 750px) {
   .videos-for-every-container {
     font-size: var(--font-size-26xl);

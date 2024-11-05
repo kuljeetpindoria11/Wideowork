@@ -79,6 +79,10 @@
   color: var(--color-gray-100);
 }
 
+.nav-links--active>a {
+  color: #000000 !important;
+}
+
 .order-now10 {
   text-decoration: none;
   position: relative;
@@ -276,6 +280,7 @@
   font-size: var(--font-size-37xl);
   color: var(--color-gray-100);
   font-family: var(--body-3);
+  margin-top: 150px
 }
 
 .brand-divider {
@@ -463,7 +468,7 @@
   gap: var(--gap-base);
 }
 
-.customization-pick-step{
+.customization-pick-step {
   flex: 1;
   border-radius: var(--br-3xs);
   background-color: var(--color-white);
@@ -475,12 +480,14 @@
   max-width: 100%;
   font-size: var(--heading-2-size);
   color: var(--color-black);
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
 
 .customization-icons-and-labels:hover,
 .customization-icons-and-labels1:hover {
-  
+
   flex: 1;
   border-radius: var(--br-3xs);
   background-color: var(--color-white);
@@ -506,6 +513,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+  transition: width 1s;
     padding: var(--padding-13xl) var(--padding-xl) var(--padding-13xl) var(--padding-5xl);
   }
 }
@@ -532,6 +542,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  transition: width 1s;
   padding: var(--padding-13xl) var(--padding-xl) var(--padding-13xl) var(--padding-5xl);
 
   .choose-the-type {
@@ -787,9 +798,16 @@
   position: absolute;
   top: calc(50% - 47.5px);
   left: calc(50% - 51px);
-  width: 101.9px;
-  height: 101.9px;
+  width: 120px;
+  height: 80px;
   object-fit: cover;
+}
+
+marquee {
+
+  img {
+    margin: 10px
+  }
 }
 
 .testimonial-image-container {
@@ -959,8 +977,8 @@
   flex: 1;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   max-width: 100%;
   gap: var(--gap-xl);
@@ -974,10 +992,10 @@
 }
 
 .video-testimonial {
-  width: 758px;
+  width: 100%;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   padding: 0 5px;
 }
 
